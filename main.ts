@@ -1,6 +1,6 @@
 function plot () {
     rendereraMask()
-    led.plot(apple[0], apple[0])
+    led.plot(apple[0], apple[1])
 }
 input.onButtonPressed(Button.A, function () {
     riktning += -1
@@ -58,8 +58,8 @@ let maskLangd = 0
 let riktning = 0
 riktning = 1
 maskLangd = 1
-planHojd = 5
-planBredd = 5
+planHojd = 4
+planBredd = 4
 mask = [[2, 2], [2, 3]]
 flyttaApple()
 loops.everyInterval(500, function () {
